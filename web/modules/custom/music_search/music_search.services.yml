@@ -1,0 +1,7 @@
+services:
+  music_search.spotify:
+    class: Drupal\music_search\SpotifySearchService
+    arguments: ['@tempstore.private', '@config.factory']
+  music_search.discogs:
+    class: Drupal\music_search\DiscogsSearchService
+    arguments: ['@tempstore.private', '@config.factory']

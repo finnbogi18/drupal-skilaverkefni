@@ -42,3 +42,5 @@ private
 tmp
 .editorconfig
 .gitattributes
+/.editorconfig
+/.gitattributes

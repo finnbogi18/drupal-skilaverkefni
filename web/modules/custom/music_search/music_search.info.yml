@@ -1,0 +1,5 @@
+name: Music Search
+description: A module that searches for music.
+type: module
+core_version_requirement: ^9
+package: Custom

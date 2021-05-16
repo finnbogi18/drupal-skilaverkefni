@@ -1,0 +1,77 @@
+music_search.hello:
+  path: '/music'
+  defaults:
+    _controller:  Drupal\music_search\Controller\MusicSearchController::musicSearch
+    _title: 'Our first route'
+  requirements:
+    _permission: 'access content'
+music_search.search_form_lag:
+  path: '/music/search/lag'
+  defaults:
+    _form: Drupal\music_search\Form\MusicSearchFormLag
+    _title: 'Leit að lagi'
+  requirements:
+    _permission: 'access content'
+music_search.search_form_listamadur:
+  path: '/music/search/listamadur'
+  defaults:
+    _form: Drupal\music_search\Form\MusicSearchFormListamadur
+    _title: 'Leit að listamanni'
+  requirements:
+    _permission: 'access content'
+music_search.search_form_album:
+  path: '/music/search/album'
+  defaults:
+    _form: Drupal\music_search\Form\MusicSearchFormAlbum
+    _title: 'Leit að albúmi'
+  requirements:
+    _permission: 'access content'
+music_search.spotify_config:
+  path: '/admin/spotify/config'
+  defaults:
+    _form: Drupal\music_search\Form\SpotifyConfigForm
+    _title: 'Spotify configuration form'
+  requirements:
+    _permission: 'access content'
+music_search.discogs_config:
+  path: '/admin/discogs/config'
+  defaults:
+    _form: Drupal\music_search\Form\DiscogsConfigForm
+    _title: 'Discogs configuration form'
+  requirements:
+    _permission: 'access content'
+music_search.autocompleteArtist:
+  path: '/music/autocompleteArtist'
+  defaults:
+    _controller: \Drupal\music_search\Controller\MusicSearchController::autocompleteArtist
+    _format: json
+  requirements:
+    _permission: 'access content'
+music_search.autocompleteTrack:
+  path: '/music/autocompleteTrack'
+  defaults:
+    _controller: \Drupal\music_search\Controller\MusicSearchController::autocompleteTrack
+    _format: json
+  requirements:
+    _permission: 'access content'
+music_search.autocompleteAlbum:
+  path: '/music/autocompleteAlbum'
+  defaults:
+    _controller: \Drupal\music_search\Controller\MusicSearchController::autocompleteAlbum
+    _format: json
+  requirements:
+    _permission: 'access content'
+music_search.search_result_form:
+  path: '/music/search/result'
+  defaults:
+    _form: Drupal\music_search\Form\MusicSearchResultForm
+    _title: 'Search form'
+  requirements:
+    _permission: 'access content'
+music_search.search_form_edit:
+  path: '/music/search/result/edit'
+  defaults:
+    _form: Drupal\music_search\Form\MusicSearchFormEdit
+    _title: 'Gögn frá vefþjónustum'
+  requirements:
+    _permission: 'access content'

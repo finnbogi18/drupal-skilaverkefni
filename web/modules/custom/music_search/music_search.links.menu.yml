@@ -1,0 +1,20 @@
+music_search.lag:
+  title: 'Leita að lagi'
+  description: 'Leitaðu að lagi'
+  route_name: music_search.search_form_lag
+  menu_name: main
+  weight: 0
+music_search.listamadur:
+  title: 'Leita að listamanni'
+  description: 'Leitaðu að listamanni'
+  route_name: music_search.search_form_listamadur
+  menu_name: main
+  weight: 0
+music_search.plata:
+  title: 'Leita að plötu'
+  description: 'Leitaðu að plötu'
+  route_name: music_search.search_form_album
+  menu_name: main
+  weight: 0
+
+
